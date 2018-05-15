@@ -10,7 +10,7 @@
    "version": {
       "Major": 1,
       "Minor": 0,
-      "Patch": 4
+      "Patch": 5
    },
    "demands": [],
   "inputs": [
@@ -18,7 +18,7 @@
       "name": "SonarCloudWebHookAPI",
       "type": "string",
       "label": "url to SonarCloud Web Hook API",
-      "defaultValue": "",
+      "defaultValue": "http://40.68.212.247:8420/api/hook",
       "required": true
     },
     {
