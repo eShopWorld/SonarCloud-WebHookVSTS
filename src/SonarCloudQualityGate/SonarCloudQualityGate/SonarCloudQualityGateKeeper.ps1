@@ -48,7 +48,7 @@ try
 
 		if ("True".Equals($response))
 		{
-			$gateSuccess=true
+			$gateSuccess=$true
             break            
 		}
 	}
@@ -64,6 +64,10 @@ finally
     if (!$gateSuccess)
     {
         throw "Quality Gate failed"
+    }
+    else
+    {
+        Write-Output "Quality Gate succeeded"
     }
 }
 
