@@ -10,7 +10,7 @@
    "version": {
       "Major": 1,
       "Minor": 0,
-      "Patch": 6
+      "Patch": 7
    },
    "demands": [],
   "inputs": [
@@ -19,21 +19,24 @@
       "type": "string",
       "label": "url to SonarCloud Web Hook API",
       "defaultValue": "http://40.68.212.247:8420/api/hook",
-      "required": true
+      "required": true,
+      "helpMarkDown": "This configures URL for the backend"
     },
     {
       "name": "TimeoutInSeconds",
       "type": "string",
       "label": "Timeout for the quality gate polling (in seconds)",
       "defaultValue": "10",
-      "required": true
+      "required": true,
+      "helpMarkDown": "This configues timeout for polling - wait time for the result"
     },
     {
       "name": "BuildNumber",
       "type": "string",
       "label": "Build number to check - usually referenced by variable",
-      "defaultValue": "",
-      "required": true
+      "defaultValue": "$(sonarBuildIdentifier)",
+      "required": true,
+      "helpMarkDown": "This configues build identifier to request quality gate for - usually links to variable"
     }
   ],
    "instanceNameFormat": "SonarCloudQualityGate",

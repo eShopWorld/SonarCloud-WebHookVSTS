@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "SonarCloudQualityGate",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "name": "SonarCloud quality gate",
   "scopes": [],
   "description": "this extension covers quality gate enforcement using data from SonarCloud",
